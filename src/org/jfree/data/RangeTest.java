@@ -6,7 +6,7 @@ import java.beans.Transient;
 
 import org.junit.*;
 
-public class RangeTestNew {
+public class RangeTest {
     private Range exampleRange1;
     private Range exampleRange2;
     private Range exampleRange3;
