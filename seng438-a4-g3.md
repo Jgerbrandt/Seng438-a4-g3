@@ -2,12 +2,12 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:      |     |
-| -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Group \#: 3    |
+| -------------- |
+| Aaron Frerichs |
+| Avijot Gern    |
+| Jesse Gerbrandt|
+| Ethan Subasic  |
 
 # Introduction
 
