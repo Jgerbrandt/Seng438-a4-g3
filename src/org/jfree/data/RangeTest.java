@@ -349,7 +349,7 @@ public class RangeTest {
 //    	assertEquals("range1(n,Nan) + range2(n,Nan) = range1+range2", 
 //    			Range.combineIgnoringNaN(new Range(0, Double.NaN),
 //    					new Range(0, Double.NaN)), new Range(0, Double.NaN));}
-    
+//    
 //    @Test
 //    public void combiningTwoNormalRangesBothWithLowerNaNReturnNull() {
 //    	assertEquals("range1(Nan,n) + range2(Nan,n) = range1+range2", 
@@ -402,15 +402,11 @@ public class RangeTest {
     // Testing For the shift(range, double, & bool) Method 
     //----------------------------------------------------------
     
-//    @Test
-//    public void shiftRangeBy3() {
-//    	assertEquals("shifting the range -1 to 1 by 3 should show 2 to 6", 
-//    			new Range(2, 6), Range.shift(new Range(-1, 1), 3));}
+    @Test
+    public void shiftRangeBy3() {    	assertEquals("shifting the range -1 to 1 by 3 should show 0 to 4",     			new Range(0, 4), Range.shift(new Range(-1, 1), 3));}
     
-//    @Test
-//    public void shiftRangeBy3WithAllowingCrosover() {
-//    	assertEquals("shifting the range -1 to 1 by 3 should show 2 to 6", 
-//    			new Range(2, 6), Range.shift(new Range(-1, 1), 3, true));}
+    @Test
+    public void shiftRangeBy3WithAllowingCrosover() {    	assertEquals("shifting the range -1 to 1 by 3 should show 2 to 4",     			new Range(2, 4), Range.shift(new Range(-1, 1), 3, true));}
     
     @Test
     public void shiftRangeBy3WithAllowingCrosoverWithZeroLowerRange() {
@@ -422,18 +418,16 @@ public class RangeTest {
     	assertEquals("shifting the range -1 to 0 by 3 should show 2 to 3", 
     			new Range(2, 3), Range.shift(new Range(-1, 0), 3, true));}
     
-//    @Test
-//    public void shiftRangeBy3WithNotAllowingCrosoverWithZeroUpperRange() {
-//    	assertEquals("shifting the range -1 to 0 by 3 should show 2 to 3", 
-//    			new Range(2, 3), Range.shift(new Range(-1, 0), 3, false));}
+    @Test
+    public void shiftRangeBy3WithNotAllowingCrosoverWithZeroUpperRange() {    	assertEquals("shifting the range -1 to 0 by 3 should show 2 to 3",     			new Range(0, 3), Range.shift(new Range(-1, 0), 3, false));}
     
     //----------------------------------------------------------
     // Testing For the scale Method 
     //----------------------------------------------------------
     
-//    @Test(expected = nullNotPermitted.class)
-//    public void scalingANullRange() {
-//    	Range.scale(null, 2);}
+    @Test(expected = IllegalArgumentException.class)
+    public void scalingANullRange() {
+    	Range.scale(null, 2);}
     
     @Test
     public void scalingARange() {
@@ -441,10 +435,10 @@ public class RangeTest {
     			new Range(-2, 2), Range.scale(new Range(-1, 1), 2));
   	}
     
-//    @Test(expected = IllegalArgumentException.class)
-//    public void scalingARangeWithFactorOf0() {
-//    	Range.scale(new Range(-1, 1), 0);
-//  	}
+    @Test //(expected = IllegalArgumentException.class)
+    public void scalingARangeWithFactorOf0() {
+    	Range.scale(new Range(-1, 1), 0);
+  	}
     
     @Test(expected = IllegalArgumentException.class)
     public void scalingARangeWithFactorOfNeg() {
@@ -460,10 +454,10 @@ public class RangeTest {
     	assertEquals("expand the range -1 to 1 by margins o% upper and 0% lower should show -1 to 1", 
     			new Range(-1, 1), Range.expand(new Range(-1, 1), 0, 0));}
     
-//    @Test
-//    public void expandRangeby0andnegativeforlowerbownd() {
-//    	assertEquals("expand the range -1 to 1 by margins 0% upper and -200% lower should show 2 to 1", 
-//    			new Range(-1, 1), Range.expand(new Range(-1, 1), -2, 0));}
+    @Test
+    public void expandRangeby0andnegativeforlowerbownd() {
+    	assertEquals("expand the range -1 to 1 by margins 0% upper and -200% lower should show 2 to 1", 
+    			new Range(2, 2), Range.expand(new Range(-1, 1), -2, 0));}
     
     @After
     public void tearDown() throws Exception {
