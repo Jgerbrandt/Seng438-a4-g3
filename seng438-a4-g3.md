@@ -81,6 +81,8 @@ This lab focused on both Mutation Testing and GUI Testing. Throughout the Mutati
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
 # A discussion of what could have been done to improve the mutation score of the test suites
+There are a few ways that mutants are killed depending on the mutant. Since in assignment 3 we focused heavily on ensuring that the coverage of the code was sufficient, we were able to kill many of the mutants before adding any tests to the test suite.<br/>
+When we ran the Pitest mutation software we noticed many of the mutations that survived were equivalent mutations and thus were not an issue to the software. However the remaining mutants that survived often came from condtions and math mutations. To ensure that in the future the mutations were killed we added test cases made to specifically target mutants that survived. For instance many were the result of missing condtion checking so we were able to repeat nearly identical tests with just a slight variation of some of the inputs. 
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
