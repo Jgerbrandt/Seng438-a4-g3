@@ -84,10 +84,22 @@
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
 # Explain your SELENUIM test case design process
+For our test case design process, we wanted to give each group member a chance to play with the Selenium IDE, so long as they tested 2 major functionalities of the website. We chose to test the IKEA website (https://www.ikea.com/) and some of the targeted functionality included Logging in, Adding to cart, adding to wishlist, and searching for products (alongside some others). Although each group member was allowed to explore the Selenium IDE freely, they were still tasked to functionality that would be utilized most by common users of the website. The follow table shows a list of the test cases as they appear on Selenium (in the submitted .SIDE files) alongside the group member who performed the respective tests. 
+
+| Group Member | Test Case Name                            |
+| ------------ | ----------------------------------------- |
+| Ethan        | TC#1: Adding to and Viewing Wish List     |
+| Ethan        | TC#2: Change Language to French           |
+| Jesse        | TC#3: Adding Items to Cart                |
+| Jesse        | TC#4: Category Browsing                   |
+| Aaron        | TC#5: Login                               |
+| Aaron        | TC#6: Search Item                         |
+| Avijot       | TC#7: Creating/Adding to Custom Wish List |
+| Avijot       | TC#8: Removing From Shopping Cart         |
 
 # Explain the use of assertions and checkpoints
-
-# how did you test each functionaity with different test data
+The purpose of using assertions and checkpoints during testing in SELENIUM IDE is to ensure we have an automated way to test the functionality. Assertions/Checkpoints can act as "Verification points" at which the IDE will test a specific condition, if the condition fails, the test will fail. Some points where we used assertions included checking whether or not a specific value existed on the page, or whether a text field was indeed editable. By using these features of the IDE, we were able to automate our testing further in that we could rely on the IDE to let us know when the test failed, and exactly what caused the failure. Checkpoints, like assertions, are essentially "true or false" checkers, however checkpoints are more specific in the fact that they compare specific values. For example, our "Change Language to French" test, we were able to comapre the "Select Store" button and see if it did indeed change to french ("Choisir un magasin"). These can prove to be especially useful when it comes to UI testing with SELENIUM as you can simple record the steps for a test, and add an asserrtion mid recording, this will now behave as an automated assertion or checkpoint whenever the test is re-run. 
+# How did you test each functionaity with different test data
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 

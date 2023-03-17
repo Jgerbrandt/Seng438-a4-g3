@@ -1,0 +1,1121 @@
+{
+  "id": "cb75027f-b56a-4e7b-9afb-e61714e72390",
+  "version": "2.0",
+  "name": "SENG-438-A4",
+  "url": "https://www.ikea.com",
+  "tests": [{
+    "id": "c3f9917e-a9be-4bbf-9d28-b57c13ed73ef",
+    "name": "Adding to and Viewing Wish List",
+    "commands": [{
+      "id": "c95b9268-7f55-403b-8650-9e338c13db9c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68d8c99e-587b-46cb-be86-3ac43d9bab11",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "923x626",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5bcfceb-4c4c-4a68-a832-f5d03a02c020",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hero .go-shopping",
+      "targets": [
+        ["css=.hero .go-shopping", "css:finder"],
+        ["xpath=//div[@id='mountId']/div/main/div/div/div/section/div[2]/div/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/div/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f56be2c1-dc55-4d56-b480-4970fc79e3e5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__label",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__label", "css:finder"],
+        ["xpath=//div[2]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18722b1a-5f74-48c8-864c-773244b14a6b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__label",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__label", "css:finder"],
+        ["xpath=//div[2]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9703563b-0a8b-4cdb-958e-c35f24dce5a9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf78d4a3-ff21-4dcf-9474-e3436cfa32aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "142250e1-9f40-4d9f-8ddb-e541474aa50f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dac63e08-7ce6-4446-b682-9c373f8319a1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=.hnf-menu__nav__main > li:nth-child(1) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/cat/products-products/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58d47278-66fb-48c5-896c-3482d86bf8fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All furniture",
+      "targets": [
+        ["linkText=All furniture", "linkText"],
+        ["css=.hnf-menu__nav2:nth-child(2) > .hnf-menu__nav2__main > li:nth-child(6) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'All furniture')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/cat/all-furniture-fu001/')]", "xpath:href"],
+        ["xpath=//nav[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All furniture')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1096a248-7349-477f-9ff7-c067bfeb6217",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gaming furniture",
+      "targets": [
+        ["linkText=Gaming furniture", "linkText"],
+        ["css=li:nth-child(6) li:nth-child(3) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Gaming furniture')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/cat/gaming-furniture-55002/')]", "xpath:href"],
+        ["xpath=//li[6]/nav/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gaming furniture')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb28410b-31c8-47ec-9733-b4bd9aef1a9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-page-container__main",
+      "targets": [
+        ["css=.plp-page-container__main", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c934f6c5-f26d-460d-af64-fb68d37b3cdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-fragment-wrapper:nth-child(1) .pip-btn--icon-tertiary",
+      "targets": [
+        ["css=.plp-fragment-wrapper:nth-child(1) .pip-btn--icon-tertiary", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/div/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e959601-908c-4273-a889-6a7773106cdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-fragment-wrapper:nth-child(2) .pip-btn--icon-tertiary",
+      "targets": [
+        ["css=.plp-fragment-wrapper:nth-child(2) .pip-btn--icon-tertiary", "css:finder"],
+        ["xpath=(//button[@type='button'])[15]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fa49459-d32f-49f5-aa92-2dff55f70134",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,996.7999877929688)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2758cd7a-2c7f-4576-af62-e622f0fd387b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn__inner--icon-tertiary-inverse",
+      "targets": [
+        ["css=.hnf-btn__inner--icon-tertiary-inverse", "css:finder"],
+        ["xpath=//div[2]/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7084e341-560e-48db-b09f-7c54af4b7d40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__shopping-list-link .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__shopping-list-link .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9015e8a2-f6d6-4569-9190-e187c2481918",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e116243-ab73-4173-a6b6-9083a4d94b24",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89fc0432-3821-4f37-b5cc-026100c9c4ae",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,106.4000015258789)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd785e29-6135-4d5e-90a3-4d12d55c9f2d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,386.3999938964844)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c17ff247-eecd-427b-830e-29254b225f4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ListHeader_listItemCount__3BgoT",
+      "targets": [
+        ["css=.ListHeader_listItemCount__3BgoT", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div/div/header/div/div[2]", "xpath:idRelative"],
+        ["xpath=//header/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b625e211-19e4-4585-867c-c0a62e39eda1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ListHeader_listItemCount__3BgoT",
+      "targets": [
+        ["css=.ListHeader_listItemCount__3BgoT", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div/div/header/div/div[2]", "xpath:idRelative"],
+        ["xpath=//header/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c050bf1-bfe0-4e76-b81b-399436f2518f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-ingka-btn--small > .list-ingka-btn__inner",
+      "targets": [
+        ["css=.list-ingka-btn--small > .list-ingka-btn__inner", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div/div/header/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//header/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d2083cf-6a44-4920-a62d-d29045a305f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#list-ingka-context-menu-actions-5 .list-ingka-action-list-item__label",
+      "targets": [
+        ["css=#list-ingka-context-menu-actions-5 .list-ingka-action-list-item__label", "css:finder"],
+        ["xpath=//li[@id='list-ingka-context-menu-actions-5']/button/span/span", "xpath:idRelative"],
+        ["xpath=//li[4]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7bf4265-b0a4-4dbe-86f5-7f9ecb85c1c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SelectListItem_container__2JkUZ",
+      "targets": [
+        ["css=.SelectListItem_container__2JkUZ", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23edfc91-d972-47ee-a988-0eae1d114889",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ListHeader_listItemCount__3BgoT",
+      "targets": [
+        ["css=.ListHeader_listItemCount__3BgoT", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div/div/header/div/div[2]", "xpath:idRelative"],
+        ["xpath=//header/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4b4b6dd9-902f-4c72-aed8-6014ae6b45b9",
+    "name": "Change Language to French",
+    "commands": [{
+      "id": "f17836aa-30c7-4dfd-af01-5f080806814a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de33f9d1-a573-484c-95d2-b3430cbaded5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "923x626",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b95ffca-e511-4790-aa39-7795bec0e950",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svelte-4987es .website-link",
+      "targets": [
+        ["css=.svelte-4987es .website-link", "css:finder"],
+        ["xpath=//div[@id='mountId']/div/main/div/div/div/section/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/?ref=gwp-start')])[2]", "xpath:href"],
+        ["xpath=//section/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56d55ac4-55c3-44ce-b9b6-90a557e3c198",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de721af6-13bf-4f09-9651-523b1af11400",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Rooms",
+      "targets": [
+        ["linkText=Rooms", "linkText"],
+        ["css=.hnf-menu__nav__main > li:nth-child(2) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Rooms')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/rooms/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa4ca8f8-7cae-41ec-b810-b1d7e44b5d9a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Rooms",
+      "targets": [
+        ["linkText=Rooms", "linkText"],
+        ["css=.hnf-menu__nav__main > li:nth-child(2) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Rooms')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/rooms/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70ef5e1c-b290-465f-a041-0a5fb7916956",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Best prices",
+      "targets": [
+        ["linkText=Best prices", "linkText"],
+        ["css=.hnf-menu__nav__main > li:nth-child(3) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Best prices')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/campaigns/our-best-price-pubcc18f5f9')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9984610d-ea74-4da6-bcfc-8ad2a719b93f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Best prices",
+      "targets": [
+        ["linkText=Best prices", "linkText"],
+        ["css=.hnf-menu__nav__main > li:nth-child(3) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Best prices')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/campaigns/our-best-price-pubcc18f5f9')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cef1f9f7-56a9-4ea2-920a-cd985a196618",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0861b1c-39d8-4460-93f0-c3bfd84bf00d",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=Français"
+    }, {
+      "id": "27331e61-7466-4e1f-896d-17e01d484359",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [],
+      "value": "Choisir un magasin"
+    }, {
+      "id": "4cbfdd29-7653-4240-866e-80023a523692",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a52a4acf-588a-4def-b4c0-7b8ef7d394e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48d27a71-f842-49b6-bce7-f4b672fd2aad",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=English"
+    }, {
+      "id": "7baa96c5-57cc-4959-bd8f-94f1c4cef14c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd070d0-37d8-4313-8bfd-4b4fb8345357",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d56a04a-7a2d-428a-8e17-892a679203eb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [],
+      "value": "Select store"
+    }]
+  }, {
+    "id": "869602f7-d050-4403-95af-a5d0ff23fc1b",
+    "name": "Create a custom wishlist ",
+    "commands": [{
+      "id": "3805780a-5a10-492c-83b4-3440f3f29f3b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df8a54e8-1667-4443-9b52-f10af82ddfc5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "926x626",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08072ea6-c7ef-4dff-811a-74b5ed1bab73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hero .go-shopping",
+      "targets": [
+        ["css=.hero .go-shopping", "css:finder"],
+        ["xpath=//div[@id='mountId']/div/main/div/div/div/section/div[2]/div/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/div/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "010bc173-1901-4512-8893-9465c392ebbd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[5]/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7af4966-8314-4117-8ca0-b5a94b1de1c3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[5]/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2bf6002-657a-45ca-a617-0175274f08e1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[5]/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4c73ce4-4d82-4e6b-9e48-a40cb071b7b5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[5]/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f779c74b-c1c4-444d-bd2d-566e724d0cd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__shopping-list-link .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__shopping-list-link .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "043d826a-60e2-4f23-b743-6429b9ca6b06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-ingka-btn__label:nth-child(2)",
+      "targets": [
+        ["css=.list-ingka-btn__label:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fa1a619-4f41-47c2-9b20-234268ce46d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=new-list-form-input",
+      "targets": [
+        ["id=new-list-form-input", "id"],
+        ["css=#new-list-form-input", "css:finder"],
+        ["xpath=//input[@id='new-list-form-input']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "TestListDemo"
+    }, {
+      "id": "b45a80b0-936c-4148-b1ff-1218771f5974",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NewListForm_buttonContainer__14Zz8 > .list-ingka-btn:nth-child(1) .list-ingka-svg-icon",
+      "targets": [
+        ["css=.NewListForm_buttonContainer__14Zz8 > .list-ingka-btn:nth-child(1) .list-ingka-svg-icon", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8f4902f2-e043-4fe2-8f58-8abf8307ee3c",
+    "name": "Add to Custom Wish List ",
+    "commands": [{
+      "id": "0a1731a4-6d8e-4779-9002-d19356e7be2d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "752bb028-cc91-4ee5-8455-0488fbfe31f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "930x630",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b85cb7f-7cc2-4dbe-acb7-94caf07f6378",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svelte-4987es .website-link",
+      "targets": [
+        ["css=.svelte-4987es .website-link", "css:finder"],
+        ["xpath=//div[@id='mountId']/div/main/div/div/div/section/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/?ref=gwp-start')])[2]", "xpath:href"],
+        ["xpath=//section/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7451897b-4cb0-4f10-a1ca-077e6254b0fb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ffafb60-4f7d-483d-a61b-35ff76e8398c",
+      "comment": "",
+      "command": "type",
+      "target": "id=ikea-search-input",
+      "targets": [
+        ["id=ikea-search-input", "id"],
+        ["name=q", "name"],
+        ["css=#ikea-search-input", "css:finder"],
+        ["xpath=//input[@id='ikea-search-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gaming chair"
+    }, {
+      "id": "8ff9e3d0-8f3a-4f89-9e6c-68422957957d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=ikea-search-input",
+      "targets": [
+        ["id=ikea-search-input", "id"],
+        ["name=q", "name"],
+        ["css=#ikea-search-input", "css:finder"],
+        ["xpath=//input[@id='ikea-search-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4d9e2efe-2310-4409-965c-7f7f06b723b4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,156.8000030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c46a24d-bed7-4cc6-9c42-46b724c68977",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,488.79998779296875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb5ed9b8-1eb0-4717-b9a9-c6d4a9f570d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-fragment-wrapper:nth-child(1) .pip-btn--icon-tertiary",
+      "targets": [
+        ["css=.plp-fragment-wrapper:nth-child(1) .pip-btn--icon-tertiary", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//section[@id='product-list']/div/div/div[2]/div/div/div/div/button[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50e4639e-4056-4867-a96b-d1c75ee4cd81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list:nth-child(2) .list-name",
+      "targets": [
+        ["css=.list:nth-child(2) .list-name", "css:finder"],
+        ["xpath=//div[@id='list-agent']/div/div/div/div[3]/div/div[2]/div/div/ul/button[2]/div/div", "xpath:idRelative"],
+        ["xpath=//button[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c04626fd-af70-44d4-9ca2-a97073c4b892",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__shopping-list-link .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__shopping-list-link .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92adaa06-660d-48e5-9b46-e796f16d0027",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a151ff3-8ef5-4482-a02c-eab469f4f265",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,32)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a88ecd2-a85e-4e18-984e-23161d60d1c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__shopping-list-link .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__shopping-list-link .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bdb2b60-57c6-4835-a17f-5f33f02052c0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#loyalty-modal-button > .hnf-btn__inner",
+      "targets": [
+        ["css=#loyalty-modal-button > .hnf-btn__inner", "css:finder"],
+        ["xpath=//a[@id='loyalty-modal-button']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hej! Log in or sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9ff0d6c-001e-43ca-9445-b4bf21070dfa",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#loyalty-modal-button > .hnf-btn__inner",
+      "targets": [
+        ["css=#loyalty-modal-button > .hnf-btn__inner", "css:finder"],
+        ["xpath=//a[@id='loyalty-modal-button']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hej! Log in or sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbf00792-94a9-4f0f-b206-23fbe8ba6a37",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a131978c-a042-4574-a750-36611ea8bfd5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2501b742-b4f5-43ca-a099-29e5e72c9561",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SelectListItem_container__2JkUZ:nth-child(1) .ListHeader_listNameContent__3lk7J",
+      "targets": [
+        ["css=.SelectListItem_container__2JkUZ:nth-child(1) .ListHeader_listNameContent__3lk7J", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div[2]/div/header/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/header/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c59038-44f1-4897-8c25-37971c05824b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=TestListDemo",
+      "targets": [
+        ["linkText=TestListDemo", "linkText"],
+        ["css=.SelectListItem_container__2JkUZ:nth-child(1) .ListHeader_listName__3wNZq", "css:finder"],
+        ["xpath=//a[contains(text(),'TestListDemo')]", "xpath:link"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div[2]/div/header/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ca/en/favourites/e0e6e104-b3a7-4c00-b151-d65095fcc85d/retail')]", "xpath:href"],
+        ["xpath=//header/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'TestListDemo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45692978-0ce6-4e9a-8bff-26e9ea9b0533",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SelectListItem_container__2JkUZ:nth-child(1) .list-ingka-btn__inner",
+      "targets": [
+        ["css=.SelectListItem_container__2JkUZ:nth-child(1) .list-ingka-btn__inner", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/div/div[2]/div/div/div/div[2]/div/header/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//header/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f364427-8514-43e2-bb09-e609a3dcec30",
+      "comment": "",
+      "command": "click",
+      "target": "css=#list-ingka-context-menu-actions-4 .list-ingka-action-list-item__label",
+      "targets": [
+        ["css=#list-ingka-context-menu-actions-4 .list-ingka-action-list-item__label", "css:finder"],
+        ["xpath=//li[@id='list-ingka-context-menu-actions-4']/button/span/span", "xpath:idRelative"],
+        ["xpath=//li[4]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e66c7292-bfad-4dbf-b097-5983a59834e8",
+    "name": "Removing from Cart (Cart History Unchanged)",
+    "commands": [{
+      "id": "fa6dfa42-7338-4cf2-ad8c-bfec5465a085",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21ec8d13-b6a2-4ada-bf62-ec4f7dc3dbc1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce0475e9-9715-4518-855b-d66dfaff4b37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svelte-4987es .website-link",
+      "targets": [
+        ["css=.svelte-4987es .website-link", "css:finder"],
+        ["xpath=//div[@id='mountId']/div/main/div/div/div/section/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/?ref=gwp-start')])[2]", "xpath:href"],
+        ["xpath=//section/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d234a8b-e4a8-4f44-ae3f-5979cb5d9d87",
+      "comment": "",
+      "command": "type",
+      "target": "id=ikea-search-input",
+      "targets": [
+        ["id=ikea-search-input", "id"],
+        ["name=q", "name"],
+        ["css=#ikea-search-input", "css:finder"],
+        ["xpath=//input[@id='ikea-search-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gaming chair"
+    }, {
+      "id": "08b15966-3643-46e3-84cc-5e88fc5d4f77",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=ikea-search-input",
+      "targets": [
+        ["id=ikea-search-input", "id"],
+        ["name=q", "name"],
+        ["css=#ikea-search-input", "css:finder"],
+        ["xpath=//input[@id='ikea-search-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b5ca3cfc-83a1-47bc-9bc6-64736df0f5d2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,207.1999969482422)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "023bd5ab-b87e-44f5-9d59-b0e96e8f2d18",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,468.79998779296875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "946599fa-7945-463a-a2c1-6bc8c4a64f23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-fragment-wrapper:nth-child(3) .pip-btn--icon-emphasised",
+      "targets": [
+        ["css=.plp-fragment-wrapper:nth-child(3) .pip-btn--icon-emphasised", "css:finder"],
+        ["xpath=(//button[@type='button'])[16]", "xpath:attributes"],
+        ["xpath=//section[@id='product-list']/div/div[3]/div[2]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0efc3316-090a-49c5-8d88-09a49ec3fe31",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pip-btn--loading > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-btn--loading > .pip-btn__inner", "css:finder"],
+        ["xpath=//section[@id='product-list']/div/div[3]/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ec20291-f41b-446d-a67d-063a6a06fc37",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pip-btn--loading > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-btn--loading > .pip-btn__inner", "css:finder"],
+        ["xpath=//section[@id='product-list']/div/div[3]/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f62cbd-1168-4d20-8e29-7d0b0a2d8f98",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.plp-fragment-wrapper:nth-child(3) .pip-compact-price-package",
+      "targets": [
+        ["css=.plp-fragment-wrapper:nth-child(3) .pip-compact-price-package", "css:finder"],
+        ["xpath=//section[@id='product-list']/div/div[3]/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9287ae1-72a0-4c89-b70e-ad1bbefbf467",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#product-list .lazy",
+      "targets": [
+        ["css=#product-list .lazy", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/images/a-young-man-sits-in-a-purple-styrspel-gaming-chair-in-front--a8c49880135051fd1c546507068780da.jpg?f=xxs')]", "xpath:img"],
+        ["xpath=//section[@id='product-list']/div/div[4]/a/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae013ae5-3129-4970-b7d1-6944616bb1b9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#product-list .lazy",
+      "targets": [
+        ["css=#product-list .lazy", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/images/a-young-man-sits-in-a-purple-styrspel-gaming-chair-in-front--a8c49880135051fd1c546507068780da.jpg?f=xxs')]", "xpath:img"],
+        ["xpath=//section[@id='product-list']/div/div[4]/a/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae6f14ef-603e-451d-a6c9-f40b666af9a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56b34eba-f740-41c9-a077-747463090338",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25fbb576-6a78-4bc2-a097-ab955c83e832",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c5ad6f-689e-4ce9-a7f9-9cf2b0ed2e1e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,144.8000030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4690628-a407-40bb-875a-b62fb574755d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc8350b6-fbd1-4c6c-9a3d-2230b670c0a8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "688d41a7-9b19-44c1-964c-193bc7ca45dd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a2d4000-a17e-4651-85cb-ad094a5b37ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-ingka-btn--xsmall > .cart-ingka-btn__inner",
+      "targets": [
+        ["css=.cart-ingka-btn--xsmall > .cart-ingka-btn__inner", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[21]/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5089a842-eee8-4b7d-b542-30d6d57b09a6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cart-ingka-btn--xsmall > .cart-ingka-btn__inner",
+      "targets": [
+        ["css=.cart-ingka-btn--xsmall > .cart-ingka-btn__inner", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[21]/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4f30eeb-c1f4-460a-8dab-e3159dfa543e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.cart-ingka-btn--xsmall > .cart-ingka-btn__inner",
+      "targets": [
+        ["css=.cart-ingka-btn--xsmall > .cart-ingka-btn__inner", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[21]/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c591372-2f89-4e51-a684-90d1583ee3f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cart-ingka-context-menu-actions-2 > .cart-ingka-action-list-item__action",
+      "targets": [
+        ["css=#cart-ingka-context-menu-actions-2 > .cart-ingka-action-list-item__action", "css:finder"],
+        ["xpath=//li[@id='cart-ingka-context-menu-actions-2']/button", "xpath:idRelative"],
+        ["xpath=//li[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Empty Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c12e3679-43e9-420f-9e83-f853a876ea98",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,144.8000030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41c67bd7-3591-4865-bd29-2883cef70b57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-ingka-page-container",
+      "targets": [
+        ["css=.cart-ingka-page-container", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main", "xpath:idRelative"],
+        ["xpath=//main/main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4712b9e1-bbf2-4f52-a7db-1ffed2f0e19d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.noProducts_noProducts__oCp4J",
+      "targets": [
+        ["css=.noProducts_noProducts__oCp4J", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[22]", "xpath:idRelative"],
+        ["xpath=//div[22]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9ded9e0-4d7c-44bd-b1be-f4c4566cc42a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.noProducts_titleContainer__RIRQy",
+      "targets": [
+        ["css=.noProducts_titleContainer__RIRQy", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div", "xpath:idRelative"],
+        ["xpath=//div[21]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36f2c020-4e77-42ab-a590-c8b882943520",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.noProducts_header__9wz2x",
+      "targets": [
+        ["css=.noProducts_header__9wz2x", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your cart is empty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a140e881-0f6b-4c98-9ae5-23acc5313bba",
+    "name": "Avijot - Test78",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["869602f7-d050-4403-95af-a5d0ff23fc1b", "8f4902f2-e043-4fe2-8f58-8abf8307ee3c", "e66c7292-bfad-4dbf-b097-5983a59834e8"]
+  }, {
+    "id": "d658c5d2-8642-4870-8d84-0cb07c1adf0e",
+    "name": "Ethan - Test12",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4b4b6dd9-902f-4c72-aed8-6014ae6b45b9", "c3f9917e-a9be-4bbf-9d28-b57c13ed73ef"]
+  }],
+  "urls": ["https://www.ikea.com/"],
+  "plugins": []
+}
