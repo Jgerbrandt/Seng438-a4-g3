@@ -100,6 +100,11 @@ Overall our testsuite is pretty robust and effective.
 
 ## A discussion on the effect of equivalent mutants on mutation score accuracy
 
+Equivalent mutations are essentially mutations that do not damage the code in a noticeable way. Equivalent mutation were very common in both the Range and DataUtilities classes, specifically they came up often when math was being done in the return statement. Since these mutations do not actually effect the outcome or behavior of the code they were unable to be detected because even by adding tests these mutations would still not be noticeable. This causes an artificial inflation of the surviving mutants as there are many that will never be killed, because of this the accuracy will always be skewed slightly.<br/>
+
+For us the best way we found to discover equivalent mutants was through analyzation of the actual source code. We would first kill as many mutants as we could through adding additional tests and when we found a mutant that was more of an issue to kill we would look through the Range or DataUtilities code and try to see if the mutation was actually equivalent. To do this we would look at what the mutation actually changed and try to see right away if it would've resulted in the same after the line as in the original code. If we weren't able to determine if the result would be the same just by looking, normally writing out the line differences helped as well as it was an easy way to visualize the change more effectively.
+
+
 ## A discussion of what could have been done to improve the mutation score of the test suites
 
 There are a few ways that mutants are killed depending on the mutant. Since in assignment 3 we focused heavily on ensuring that the coverage of the code was sufficient, we were able to kill many of the mutants before adding any tests to the test suite.<br/>
