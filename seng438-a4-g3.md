@@ -109,3 +109,4 @@ In this lab, we yet again implemented pair programming in order to ensure that e
 # Difficulties encountered, challenges overcome, and lessons learned
 Selenium IDE is a powerful tool for automating web application testing, but it can also present some significant challenges. One of the biggest obstacles that we would often encounter was that the IDE would crash unexpectedly, causing frustration and delays in the testing process. One simple test case would take up to 2 hours since the program would crash the website with every run, this led to a lot of "debugging" (restarting the program) and a lot of unresolved issues still up tp the night before the demo. 
 # Comments/feedback on the lab itself
+Overall we felt that this lab was informative on the advantages and disadvantages of mutation testing, as well as getting to understand UI testing. The instructions in the lab could be a little bit better presented as setting up the project was quite difficult.
