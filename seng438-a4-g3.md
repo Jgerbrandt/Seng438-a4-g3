@@ -10,6 +10,7 @@
 | Ethan Subasic  |
 
 # Introduction
+This lab focused on both Mutation Testing and GUI Testing. Throughout the Mutation Testing portion of this lab, the same Range and DataUtilities tests from the previous labs were used. In this iteration of testing, Pitest was used as a mutation testing software in order to examine the amount of mutants that our test code were able to kill. Through this analysis, we were able to make improvements to our previous code, increasing the robustness of our tests. In the GUI Testing section of this lab, the Selenium IDE was used to create scripts to test the IKEA website. Several tests were formulated in order to test basic functionalities of the website.
 
 # Analysis of 10 Mutants of the Range class 
 
@@ -118,8 +119,27 @@ For our test case design process, we wanted to give each group member a chance t
 
 The purpose of using assertions and checkpoints during testing in SELENIUM IDE is to ensure we have an automated way to test the functionality. Assertions/Checkpoints can act as "Verification points" at which the IDE will test a specific condition, if the condition fails, the test will fail. Some points where we used assertions included checking whether or not a specific value existed on the page, or whether a text field was indeed editable. By using these features of the IDE, we were able to automate our testing further in that we could rely on the IDE to let us know when the test failed, and exactly what caused the failure. Checkpoints, like assertions, are essentially "true or false" checkers, however checkpoints are more specific in the fact that they compare specific values. For example, our "Change Language to French" test, we were able to comapre the "Select Store" button and see if it did indeed change to french ("Choisir un magasin"). These can prove to be especially useful when it comes to UI testing with SELENIUM as you can simple record the steps for a test, and add an asserrtion mid recording, this will now behave as an automated assertion or checkpoint whenever the test is re-run. 
 # How did you test each functionaity with different test data
+During our GUI testing, there were not too many data inputs that could be examined through testing. However, one that was was tested was Valid vs Invalid User Login. One test case attempted to log in a pre-made user, while the other input invalid values in to the fields. As expected, the invalid input tests failed while the valid input passed. Additionally, the "search bar" test has the ability to easily get its value swapped within the script. In our testing on the IKEA website, a "lamp" search was executed, and then an assertion was made to ensure that the search executed. Within the script, changing the "lamp" value to any other value would be able to count as a change in input test data. 
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
+Selenium and Sikulix were both analyzed during the duration of this lab. Selenium was the perferred choice and was used for all the tests developed for the GUI. Selenium was a chrome-extension IDE which was able to record a users actions and transform the actions in to a sequence of events. Assertions could be placed within these events in order to pass or fail the tests developed. Sikulix is an IDE which adds extensions to various languages such as Java and Python. These scripts have to be manually written using Sikulix to examine the web page. The various pros and cons of the two IDEs can be seen below.
+
+Selenium:
+| Pros | Cons|
+| ------------ | ----------------------------------------- |
+| Easy to use with action recording | Website often times out when recording actions     |
+| No understand of webpage functionality or HTML required | Past actions (Eg. Adding item to cart) needs to be manually undone if not directly tested           |
+| Chrome extension allows easy installation and use | Inability to combine scripts from multiple files               |
+| Ability to export script to different configurations ||
+
+Sikulix:
+|Pros|Cons|
+|--|--|
+|Fine grained control over test execution|External IDE Download|
+|No limitations from website (Eg. timing out)|HTML and Website knowledge required|
+|Tests can be made in various languages|Tests may take more time and effort to create|
+
+
 
 # How the team work/effort was divided and managed
 
