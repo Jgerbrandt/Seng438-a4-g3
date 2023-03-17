@@ -83,7 +83,24 @@
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
+Mutation testing is used to evaluate the effectiveness of existing test cases. It involves creating small, artificial changes to the system under test and then running the existing test suite to see if any of the mutations cause the tests to fail. The goal of mutation testing is to identify weaknesses in the test suite and to improve the quality of the testing process.
+
+## Advantages:
+
+Increases confidence that the test suite is correct.
+
+Improves test coverage by exposing areas of the code that are not adequetly covered.
+
+Better understanding of the code by highlighting areas that are difficult to test and susceptible to defects.
+
+## Disadvantages:
+
+Time consuming. There are hundreds of mutants being injected to each file so covering all of them is a long and difficult process.
+
+Lots of false positives. Some mutations wont cause any issues to the code so it leads to lots of false positives.
+
 # Explain your SELENUIM test case design process
+
 For our test case design process, we wanted to give each group member a chance to play with the Selenium IDE, so long as they tested 2 major functionalities of the website. We chose to test the IKEA website (https://www.ikea.com/) and some of the targeted functionality included Logging in, Adding to cart, adding to wishlist, and searching for products (alongside some others). Although each group member was allowed to explore the Selenium IDE freely, they were still tasked to functionality that would be utilized most by common users of the website. The follow table shows a list of the test cases as they appear on Selenium (in the submitted .SIDE files) alongside the group member who performed the respective tests. 
 
 | Group Member | Test Case Name                            |
@@ -98,14 +115,17 @@ For our test case design process, we wanted to give each group member a chance t
 | Avijot       | TC#8: Removing From Shopping Cart         |
 
 # Explain the use of assertions and checkpoints
+
 The purpose of using assertions and checkpoints during testing in SELENIUM IDE is to ensure we have an automated way to test the functionality. Assertions/Checkpoints can act as "Verification points" at which the IDE will test a specific condition, if the condition fails, the test will fail. Some points where we used assertions included checking whether or not a specific value existed on the page, or whether a text field was indeed editable. By using these features of the IDE, we were able to automate our testing further in that we could rely on the IDE to let us know when the test failed, and exactly what caused the failure. Checkpoints, like assertions, are essentially "true or false" checkers, however checkpoints are more specific in the fact that they compare specific values. For example, our "Change Language to French" test, we were able to comapre the "Select Store" button and see if it did indeed change to french ("Choisir un magasin"). These can prove to be especially useful when it comes to UI testing with SELENIUM as you can simple record the steps for a test, and add an asserrtion mid recording, this will now behave as an automated assertion or checkpoint whenever the test is re-run. 
 # How did you test each functionaity with different test data
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
 # How the team work/effort was divided and managed
+
 In this lab, we yet again implemented pair programming in order to ensure that everyone got a chance to look through everything. Ethan and Avi were in a pair where Ethan took charge on the Mutation tests and Avi led on the SELENIUM tests. Jesse and Aaron were the other pair and in the same way, Jesse led on the Mutation tests whereas Aaron spearheaded the SELENIUM tests.
 
 # Difficulties encountered, challenges overcome, and lessons learned
+
 Selenium IDE is a powerful tool for automating web application testing, but it can also present some significant challenges. One of the biggest obstacles that we would often encounter was that the IDE would crash unexpectedly, causing frustration and delays in the testing process. One simple test case would take up to 2 hours since the program would crash the website with every run, this led to a lot of "debugging" (restarting the program) and a lot of unresolved issues still up tp the night before the demo. 
 # Comments/feedback on the lab itself
