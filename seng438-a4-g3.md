@@ -75,7 +75,8 @@ This lab focused on both Mutation Testing and GUI Testing. Throughout the Mutati
 **Summary:** The mutant <span style="color:red"><u>survived</u></span>. None of the tests for the isNaNRange() method are able to detect this mutation since the negation does not affect the overall boolean being returned. If the value of this.lower is already NaN, the negation will result in a NaN value, so nothing changes. If the value of this.lower is instead a double, the negation will simply result in a different double. This means that in either case the Double.isNaN() method will result the same boolean even after the negation. This means the method isNaNRange() is still acting as expected.<br/>
 
 # Report all the statistics and the mutation score for each test class
-
+![](./media/DataUtils.png)
+![](./media/RangeNew.png)
 # Analysis drawn on the effectiveness of each of the test classes
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
