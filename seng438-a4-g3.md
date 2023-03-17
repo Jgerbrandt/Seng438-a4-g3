@@ -104,8 +104,8 @@ The purpose of using assertions and checkpoints during testing in SELENIUM IDE i
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
 # How the team work/effort was divided and managed
-
+In this lab, we yet again implemented pair programming in order to ensure that everyone got a chance to look through everything. Ethan and Avi were in a pair where Ethan took charge on the Mutation tests and Avi led on the SELENIUM tests. Jesse and Aaron were the other pair and in the same way, Jesse led on the Mutation tests whereas Aaron spearheaded the SELENIUM tests.
 
 # Difficulties encountered, challenges overcome, and lessons learned
-
+Selenium IDE is a powerful tool for automating web application testing, but it can also present some significant challenges. One of the biggest obstacles that we would often encounter was that the IDE would crash unexpectedly, causing frustration and delays in the testing process. One simple test case would take up to 2 hours since the program would crash the website with every run, this led to a lot of "debugging" (restarting the program) and a lot of unresolved issues still up tp the night before the demo. 
 # Comments/feedback on the lab itself
