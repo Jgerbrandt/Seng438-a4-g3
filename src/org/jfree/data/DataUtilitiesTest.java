@@ -46,8 +46,6 @@ public class DataUtilitiesTest {
     	
     }
 	
-
-	 
 	 @Test
 	 public void mockcalculateColumnTotalForThreeValuesAndTwoRows() {
 		 double result = DataUtilities.calculateColumnTotal(myValues, 0);
@@ -55,20 +53,20 @@ public class DataUtilitiesTest {
 	     		+ " column of the 2D table should be 10.5",
 	    		 result, 10.5, .000000001d);}
 	 
-//	 @Test
-//	 public void mock_tryToUseNegativeIndexForTheColumn() {
-//			 DataUtilities.calculateColumnTotal(myValues, -1);
-//	 }
+	 @Test(expected = IndexOutOfBoundsException.class)
+	 public void mock_tryToUseNegativeIndexForTheColumn() {
+			 DataUtilities.calculateColumnTotal(myValues, -1);
+	 }
 	 
-//	 @Test(expected = NullPointerException.class)
-//	 public void mock_tryToUseLargerThanPossibleIndexForTheColumn() {
-//		 DataUtilities.calculateColumnTotal(myValues, 12);
-//	 }
+	 @Test(expected = IndexOutOfBoundsException.class)
+	 public void mock_tryToUseLargerThanPossibleIndexForTheColumn() {
+		 DataUtilities.calculateColumnTotal(myValues, 12);
+	 }
 	 
-//	 @Test(expected = IllegalArgumentException.class)
-//	 public void mock_enterNullAs2DItem() {
-//		 DataUtilities.calculateColumnTotal(nullValue, 1);
-//	 }
+	 @Test(expected = IllegalArgumentException.class)
+	 public void mock_enterNullAs2DItem() {
+		 DataUtilities.calculateColumnTotal(null, 1);
+	 }
 	 
     //----------------------------------------------------------
     // Testing the row total method
@@ -81,19 +79,15 @@ public class DataUtilitiesTest {
 		     		+ "of 3 column of the 2D table should be 9.4",
 		    		 9.4, result, .000000001d);}
 	 
-//	 @Test(expected = NullPointerException.class)
-//	 public void mock_tryToUseNegativeIndexForTheRowIndex() {
-//	
-//		 DataUtilities.calculateRowTotal(myValues, -1);
-//	 }
+	 @Test(expected = IndexOutOfBoundsException.class)
+	 public void mock_tryToUseNegativeIndexForTheRowIndex() {
+		 DataUtilities.calculateRowTotal(myValues, -1);
+	 }
 
-//	 @Test(expected = NullPointerException.class)
-//	 public void mock_tryToUseLargerThanPossibleIndexForTheRow() {
-//		 DataUtilities.calculateColumnTotal(myValues, 12);
-//	 }
-
-	 
-
+	 @Test(expected =IndexOutOfBoundsException.class)
+	 public void mock_tryToUseLargerThanPossibleIndexForTheRow() {
+		 DataUtilities.calculateColumnTotal(myValues, 12);
+	 }
 	 
     //----------------------------------------------------------
     // Testing Create Number Array method
@@ -130,7 +124,7 @@ public class DataUtilitiesTest {
 //	 public void checkThatNoExceptionIsThrownForArrayWithZeroWithCreateNumberArray() {
 //		 double[] testArr = new double[] {11,0};
 //		 DataUtilities.createNumberArray(testArr);
-//
+//		 
 //	 }
 	 
 //	 @Test(expected = NullPointerException.class)
@@ -194,7 +188,7 @@ public class DataUtilitiesTest {
 //		 
 //		 assertArrayEquals("The Matrix created by the createNumberArray2D should be"
 //		 		+ "the same as the expect matrix",expNmbrMat, actNmbrMat);}
-//	 
+	 
 //	 @Test(expected = NullPointerException.class)
 //	 public void checkThatNoExceptionIsThrownForArrayWithZeroWithCreateNumberArray2D() {
 //		 double[][] dblMat = new double[][] {{0},{1,2}};
@@ -224,27 +218,27 @@ public class DataUtilitiesTest {
 	 
 	 //Tests for calculateColumnTotal with validRows argument
 	 
-//	 @Test
-//	 public void mockcalculateColumnTotalForThreeValuesAndTwoRowsValidRows() {
-//		 double result = DataUtilities.calculateColumnTotal(myValues, 0, TwoRowsSelector);
-//	     assertEquals("the total of the values in the first "
-//	     		+ " column of the 2D table should be 10.5",
-//	    		 result, 10.5, .000000001d);}
+	 @Test
+	 public void mockcalculateColumnTotalForThreeValuesAndTwoRowsValidRows() {
+		 double result = DataUtilities.calculateColumnTotal(myValues, 0, TwoRowsSelector);
+	     assertEquals("the total of the values in the first "
+	     		+ " column of the 2D table should be 10.5",
+	    		 10, result, .000000001d);}
 	 
-//	 @Test
-//	 public void mock_tryToUseNegativeIndexForTheColumnValidRows() {
-//			 DataUtilities.calculateColumnTotal(myValues, -1, TwoRowsSelector);
-//	 }
+	 @Test(expected = IndexOutOfBoundsException.class)
+	 public void mock_tryToUseNegativeIndexForTheColumnValidRows() {
+			 DataUtilities.calculateColumnTotal(myValues, -1, TwoRowsSelector);
+	 }
 	 
-//	 @Test(expected = NullPointerException.class)
-//	 public void mock_tryToUseLargerThanPossibleIndexForTheColumnValidRows() {
-//		 DataUtilities.calculateColumnTotal(myValues, 12, TwoRowsSelector);
-//	 }
+	 @Test(expected = IndexOutOfBoundsException.class)
+	 public void mock_tryToUseLargerThanPossibleIndexForTheColumnValidRows() {
+		 DataUtilities.calculateColumnTotal(myValues, 12, TwoRowsSelector);
+	 }
 	 
-//	 @Test(expected = IllegalArgumentException.class)
-//	 public void mock_enterNullAs2DItemValidRows() {
-//		 DataUtilities.calculateColumnTotal(nullValue, 1, TwoRowsSelector);
-//	 }
+	 @Test(expected = IllegalArgumentException.class)
+	 public void mock_enterNullAs2DItemValidRows() {
+		 DataUtilities.calculateColumnTotal(null, 1, TwoRowsSelector);
+	 }
 	 
 	 //Test for calculateRowTotal with Valid Cols
 	 
@@ -255,16 +249,15 @@ public class DataUtilitiesTest {
 		     		+ "of 3 column of the 2D table should be 9.4",
 		    		 9.4, result, .000000001d);}
 	 
-//	 @Test(expected = NullPointerException.class)
-//	 public void mock_tryToUseNegativeIndexForTheRowIndexValidCols() {
-//	
-//		 DataUtilities.calculateRowTotal(myValues, -1, TwoRowsSelector);
-//	 }
+	 @Test(expected = IndexOutOfBoundsException.class)
+	 public void mock_tryToUseNegativeIndexForTheRowIndexValidCols() {
+		 DataUtilities.calculateRowTotal(myValues, -1, TwoRowsSelector);
+	 }
 
-//	 @Test(expected = NullPointerException.class)
-//	 public void mock_tryToUseLargerThanPossibleIndexForTheRowValidCols() {
-//		 DataUtilities.calculateColumnTotal(myValues, 12, TwoRowsSelector);
-//	 }
+	 @Test(expected = IndexOutOfBoundsException.class)
+	 public void mock_tryToUseLargerThanPossibleIndexForTheRowValidCols() {
+		 DataUtilities.calculateColumnTotal(myValues, 12, TwoRowsSelector);
+	 }
 	 
 	 //Equals Method Test
 	 double[][] testVals = new double[][] {{1, 5}, {2, 3}};
