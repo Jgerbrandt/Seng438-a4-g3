@@ -87,6 +87,7 @@ This lab focused on both Mutation Testing and GUI Testing. Throughout the Mutati
 
 ## Report all the statistics and the mutation score for each test class
 
+![Data Utilites Old](./media/DataUtilsOld.png)
 ![Data Utilites New](./media/DataUtils.png)
 ![Range Test New](./media/RangeNew.png)
 
