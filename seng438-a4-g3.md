@@ -87,8 +87,13 @@ This lab focused on both Mutation Testing and GUI Testing. Throughout the Mutati
 
 ## Report all the statistics and the mutation score for each test class
 
-![Data Utilites Old](./media/DataUtilsOld.png)
-![Data Utilites New](./media/DataUtils.png)
+### Data Utilites Test Old Coverage
+![Data Utilites Test Old](./media/DataUtilsOld.png)
+### Range Test Old Coverage
+![Range Test Old](./media/OldRangeTestCoverage.png)
+### Data Utilites Test New Coverage
+![Data Utilites Test New](./media/DataUtils.png)
+### Range Test New Coverage
 ![Range Test New](./media/RangeNew.png)
 
 ## Analysis drawn on the effectiveness of each of the test classes
